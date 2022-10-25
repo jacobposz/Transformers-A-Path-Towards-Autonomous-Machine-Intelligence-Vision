@@ -80,18 +80,25 @@ under uncertainty
 ### Architectures and their capacity for collapse
 ![image](https://user-images.githubusercontent.com/89123268/197675195-c54360d8-3b9f-415c-b303-d92e374308e5.png)
 
-#### No Collapse
+#### a) Prediction / regression - No Collapse
 - D represents the energy/compatibility function
 - what if we have a deterministic encoder that gives us the latent representation of x
 - then, we use a predictor module in order to predict y
 - we'll predict y directly then compare it with the true y -> we have a loss in between them
 - this cannot collapse becasue we need to predict the actual y
 
-#### Can Collapse
+#### b) Generative latent-variable Architecture - Can Collapse
+- again, we compute the representation for x, but now we introduce z that can vary over a certain domain, which gives us a domain that we can control for the output of the predictor Pred
+- if we now try to predict y from z and x, we can set z equal to y and we'd be good -> so, this can collapse
 
+#### c) Auto-Encoder - Can Collapse
+- this is the same as the first architecture, except only y go into the encoder, instead of both x and y
+- after going through the encoder, y gets a latent representation, goes through a decoder that gives you back an estimation of oneself -> so, this can collapse
 
-
-
+#### d) Joint Embedding Architecture - Can Collapse
+- we have an encoder for x and an encoder for y (these could be the same but don't have to be) -> this will give us 2 latent representations -> then, we use an energy function to compute how well these 2 latent representations fit together, possibly with the help of a latent variable
+- if the encoders always output constant vectors and the constant vectors are the same for both x and y, we'll always be good -> however, this can collapse if they are different
+- 
 
 
 
