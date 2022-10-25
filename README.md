@@ -1,4 +1,5 @@
 # A Path Towards Autonomous Machine Intelligence
+#### by Jacob Posz
 
 ## Overview
 ### JEPA
