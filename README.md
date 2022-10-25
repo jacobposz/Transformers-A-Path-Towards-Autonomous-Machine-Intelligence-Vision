@@ -56,7 +56,7 @@ under uncertainty
 - you can ask the actor, A, (or take the output from the initial actor) and then try to make these things as close as possible
 - everything's differentiable, so you can train the actor to essentially match the better actions because if you have a good world model, you can improve the low level actor, A, and at some point, the initial action sequence that it proposes will already be close to optimal
 
-
+### Self-Supervised Learning (SSL) and Energy-Based Models (EBM)
 
 
 
