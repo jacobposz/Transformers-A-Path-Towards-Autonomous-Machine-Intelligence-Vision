@@ -105,10 +105,18 @@ under uncertainty
 ![image](https://user-images.githubusercontent.com/89123268/197679370-f6278ad9-4a4b-421a-87e9-3151550593c0.png)
 
 #### Contrastive Methods
-
+- many self supervised image training procedures are contrastive -> they'll have an image -> they are going to make 2 variations of that image ->  then, they'll take a third image from the database and will make a variation of that -> then, they use embedding models to embed all of the variations -> this will give a data point somewhere in high dimensional space
+- you then try to pull the 2 variations from the same image together and push the variations from different images apart
+- contrastive training relies on you coming up with these negative samples
+- this quickly runs into problems (curse of dimensionality) so this whole approach of finding training examples/negative examples around a training example to do the contrastive training gets less and less tenable the higher the dimensions
+- therefore LeCun advertises for something different: regularized methods
 
 
 #### Regularized Methods
+- have other means of restricting space that is a low energy region
+- you enforce/encourage the system to keep the region where the energy is low very small -> this is done through regularization
+
+### The JEPA Architecture
 
 
 ## Question 1
