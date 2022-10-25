@@ -67,7 +67,13 @@ under uncertainty
 - we don't need to predict y from x directly because there could be multiple video sequences following the same beginning -> if we were to just predict y, we would probably train the system to identify only one correct continuation -> however, if we train the energy function, the energy function could assign a low value to any possible continuation as long as it assigns a high value everywhere else
 - LeCun stresses that an energy function is something you minimize at inference time while the training loss is something that you minimize at training time
 
+### Latent-Variable Energy-Based Model (LVEBM)
+![image](https://user-images.githubusercontent.com/89123268/197673225-3f3edf6a-bf39-4d55-8fe4-05902a096a0d.png)
 
+- same formula as before; we have an x and a y and an energy function, Ew that tells us how well those two are compatible with each other which is Fw
+- however, as we've seen, there could be many y that are possible for a given x
+- just by looking at x, we can't tell whcih of the y's is compatible -> thats why we introduce a latent variable, z -> z captures all of the information about y that isnt directly in x... for example, if a car has the option of turning left or rightm this would be represented by z
+- if we have an x and a y, in order to compute that energy that tells us how well the two are compatible, we need to minimize over z
 
 
 ## Question 1
