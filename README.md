@@ -118,14 +118,18 @@ under uncertainty
 - As stated by LeCun, "The main advantage of JEPA is that it performs predictions in representation space, eschewing the need to predict every detail of y, and enabling the elimination of irrelevant details by the encoders" -> obviously, this means this will be subject to collapse
 - these encoders could just throw away everything that's not relevant about x and y because we never need to predict y directly
 
-So how do we train a model like this?
+**So how do we train a model like this?**
 
-**Here is where regularization comes in:**
+**Here is where regularization comes in**
 
 ![image](https://user-images.githubusercontent.com/89123268/197689578-a1f8c2f9-cfe7-4c5d-a83f-cb67fd9c2441.png)
 
-We ibviously 
-
+- We obviously train it by minimizing the predictive error, D
+- we actually want to predict the latent representation of y, sy from the latent representation of x, sx to predict s~y
+- In this case, we have a couple of regularizers to prevent collapse:
+- **first of all, we regularize z by minimizing its information content**
+- **next, are the regularizors (-I) on the information content of the latent representations, sy & sx** -> we want to maximize the information content of -I
+- essentially, this just means that if sx or sy always has the same value, it doesn't have much information inside of it -> so for example, we could use a mini batch approach 
 
 
 ## Question 1
