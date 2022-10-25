@@ -80,12 +80,14 @@ under uncertainty
 ### Architectures and their capacity for collapse
 ![image](https://user-images.githubusercontent.com/89123268/197675195-c54360d8-3b9f-415c-b303-d92e374308e5.png)
 
-- as I mentioned above, z is everything not contained in x -> if we train this model with gradient descent
+#### No Collapse
 - D represents the energy/compatibility function
 - what if we have a deterministic encoder that gives us the latent representation of x
 - then, we use a predictor module in order to predict y
 - we'll predict y directly then compare it with the true y -> we have a loss in between them
 - this cannot collapse becasue we need to predict the actual y
+
+#### Can Collapse
 
 
 
