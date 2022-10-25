@@ -40,8 +40,10 @@ under uncertainty
 
 - again, we have an input (x) and put it through the encoder (Enc(x)) -> however, now, we are going to roll out the world module across different time steps
 - the actor (a[0]) is going to take the state it recieves from  the encoder and propse an action (this is the same actor as before) -> we can then use this and put it back into the world module along with the latent prediction
-- the predictor (Pred(s,a)) takes whatever comes out of the encoder; in other words, it takes a latent state of the world and it predicts the next latent state of the world (hence, this is why LeCun calls this "non-generative")
-
+- the predictor (Pred(s,a)) takes whatever comes out of the encoder; in other words, it takes a latent state of the world and it predicts the next latent state of the world (hence, this is why LeCun calls this "non-generative")...it doesn't predict the world, but instead predicts the latent state of the world which enables it to focus on whats truely important for the task
+- we can now give the actor the representation; if it proposes an action, we can use the world module to predict the next state 
+- from the next state, we can ask the actor for an action -> the actor gives us an action and we can predict the next state
+- let's assume that episodes are always the same length (C(s[T])) and you won't get any reward until the very end
 
 
 
