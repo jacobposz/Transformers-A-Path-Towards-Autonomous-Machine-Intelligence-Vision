@@ -110,7 +110,8 @@ under uncertainty
 ![image](https://user-images.githubusercontent.com/89123268/197686653-b59ba109-b3d0-4a27-830f-7e75bf071e7a.png)
 
 - This is the basic module
-- it looks similar to 
+- it looks similar to the Generative latent-variable Architecture model but is slightly different
+- 
 
 
 
@@ -118,6 +119,11 @@ under uncertainty
 
 
 ## Question 1
+What is the difference between the JEPA Achitecture and the Generative latent-variable Architecture model
+**hint:**
+![9](https://user-images.githubusercontent.com/89123268/197687084-91018354-2f6d-4b3e-8177-a39db32ec7a3.png)
+![image](https://user-images.githubusercontent.com/89123268/197687145-a846a455-2009-4aa7-9495-9ead766c18d3.png)
+
 
 ## Question 2
 
