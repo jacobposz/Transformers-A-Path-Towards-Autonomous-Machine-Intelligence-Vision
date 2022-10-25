@@ -74,6 +74,8 @@ under uncertainty
 - however, as we've seen, there could be many y that are possible for a given x
 - just by looking at x, we can't tell whcih of the y's is compatible -> thats why we introduce a latent variable, z -> z captures all of the information about y that isnt directly in x... for example, if a car has the option of turning left or rightm this would be represented by z
 - if we have an x and a y, in order to compute that energy that tells us how well the two are compatible, we need to minimize over z
+- there is always a hidden variable in energy-based models -> the hidden variable captures everything that isnt captured in x about y -> we minimize over that latent variable to get the actual energy which means, we're looking for the value of the latent variable that makes x and y most compatible
+- if we already know that x and y are compatible with one another, then minimizing over z (if we have a good energy function) could actually tell us something about the latent structure of the world -> so, we could infer z or if we have this model trained then if we have an x, we could actually sample some z values in order to produce different possibilities of y -> this gives us a lot of freedom to handle uncertainty in the world or unobserved structure in the world
 
 
 ## Question 1
