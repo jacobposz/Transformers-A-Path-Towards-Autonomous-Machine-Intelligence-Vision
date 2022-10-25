@@ -214,6 +214,16 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Critical Analysis
 
+- not super sophisticated
+- he has fewer components and they're not very organized
+- multiple versions
+- figure 2 is missing the agent model and cognitive control -> he doesn't have long-term memory (soar cognitive architecture does which is a much older model)
+- not enough was said about intrinsic motivation
+- only mentions minimizing risk one time in the entire paper 
+- not very long
+- no code
+- no examples
+- no actual technological experiments
 
 
 ## Resource Links
