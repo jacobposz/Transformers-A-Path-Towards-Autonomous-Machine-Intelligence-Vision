@@ -111,7 +111,11 @@ under uncertainty
 
 - This is the basic module
 - it looks similar to the Generative latent-variable Architecture model but is slightly different
-- 
+- we have our x and our y and we want to check if they're compatible with each other
+- we'll embed both of them using deterministic encoders which gives us latent representations, sx & sy
+- we then use the predictor to predict the latent representation of y, s~y from the representation of x
+- z in this case controls which latent representation we're getting -> so, z can vary over the domain (captal) Z which then leads the s~y to vary over the domain, (capital) S which then goes into the energy function, D regardless of whether the representation of sy is compatible with the predicted representation of y, s~y
+- As stated by LeCun, "The main advantage of JEPA is that it performs predictions in representation space, eschewing the need to predict every detail of y, and enabling the elimination of irrelevant details by the encoders" -> obviously, this means this will be subject to collapse
 
 
 
