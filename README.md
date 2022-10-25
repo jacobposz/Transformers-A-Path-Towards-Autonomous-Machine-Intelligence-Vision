@@ -169,9 +169,12 @@ He also states that in addition, you could also attach some kind of prediction h
 ![image](https://user-images.githubusercontent.com/89123268/197711629-b3bbeee4-baa4-4361-9929-5fc17ce98c07.png)
 
 - if you are in an uncertain environment, you could introduce latent variables, z2 & R2, which you can infer so if you want to reach a certain goal, C9s2), you can infer the latent variables through an optimization procedure or you can sample the latent variables in order to give you different continuations of your world model
+- training this would be done with non-constrative training of JEPA
 
+### Conclusion
+When answering the question of "Could this Architecture be the Basis of a Model of Animal Intelligence," LeCun states, "The presence of a cost module that drives the behavior of the agent by searching for optimal actions suggests that autonomous intelligent agents of the type proposed here will inevitably possess the equivalent of emotions. In an analogous way to animal and humans, machine emotions will be the product of an intrinsic cost, or the anticipation of outcomes from a trainable critic."
 
-
+Moreover, 
 
 ## Question 1
 What is the difference between the JEPA Achitecture and the Generative latent-variable Architecture model?
