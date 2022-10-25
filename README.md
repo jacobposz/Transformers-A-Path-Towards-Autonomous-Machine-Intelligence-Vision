@@ -225,7 +225,7 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Video Recording
 
-Overview: 
+Overview: https://www.youtube.com/watch?v=pvvhlpD6Hko
 
 ## Answers to Questions
 
