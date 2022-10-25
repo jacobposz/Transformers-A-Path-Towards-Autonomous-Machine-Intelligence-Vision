@@ -230,20 +230,21 @@ Moreover, the paper isn't very long (which doesn't mean that it is poorly writte
 
 Furthermore, compared to "The Soar Cognitive Architecture" by John E. Laird (a book about developing the fixed computational building blocks necessary for general intelligent agents), this book has much fewer components and is not very organized. I want to note that I did not read "The Soar Cognitive Architecture," but I did briefly skim it, and even from that, I could still see a huge difference in organization and complexity. 
 
-Lastly, there are multiple versions of the book as well which makes it confusing. for example, the version that I read was "Version 0.9.2, 2022-06-27," although when researching, I found multiple other versions that were completely different.
+Lastly, there are multiple versions of the book as well which makes it confusing. For example, the version that I read was "Version 0.9.2, 2022-06-27," although when researching, I found multiple other versions that were completely different.
 
 ### Missing Key Points
 
+Again, I did NOT read "The Soar Cognitive Architecture," but I did do some research on it and noticed afterwards that LeCun's model (specifically, the system architecture for autonomous intelligence model) was missing key components such as an agent model, cognitive control, and long-term memory.
+
+Moreover, there was not nearly enough emphasis on intrinsic motivation and minimizing risk which are obviously essential in any AI model (specifically, minimizing risk). Intrinsic motivation wasn't mentioned at all and minimizing risk was only mentioned once in the entire paper.
+
 ### No code or Real World Examples
 
-- figure 2 is missing the agent model and cognitive control -> he doesn't have long-term memory (soar cognitive architecture does which is a much older model)
-- not enough was said about intrinsic motivation
-- only mentions minimizing risk one time in the entire paper 
-- not very long
-- no code
-- no examples
-- no actual technological experiments
+As I mentioned before, LeCun didn't intend for this paper to be super complex or mathematical. I'm fine with him providing no code in the paper. However, I would've liked him to have included at least one example of an actual real world experiment where his model has been/could be used. In my opinion, this is the biggest and most important thing missing in this paper; real world examples always help the reader to better understand what you (the author) is trying to convey in his text.
 
+### Final Thoughts
+
+Other than that, I thought the paper was well written and did truely enjoy learning about JEPA and LeCun's approach on how he thinks we should reach machine intelligence.
 
 ## Resource Links
 
