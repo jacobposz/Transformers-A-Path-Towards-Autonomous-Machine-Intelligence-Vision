@@ -223,7 +223,7 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 - an article from shaped.ai about Yann LeCun and his paper: https://www.shaped.ai/blog/yann-lecun-a-path-towards-autonomous-machine-intelligence
 - a YouTube video by David Shapiro discussing the paper: https://www.youtube.com/watch?v=RNwgfppbPQ4
 
-## Video Recording
+## Video Recordings
 
 - Overview: https://www.youtube.com/watch?v=pvvhlpD6Hko
 
