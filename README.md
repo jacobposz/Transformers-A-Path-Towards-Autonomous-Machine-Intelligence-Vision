@@ -190,6 +190,11 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ![13](https://user-images.githubusercontent.com/89123268/197706167-484eec21-0620-4137-93e0-ebd5c4a336e6.png)
 
+- x is the state of the world and we know that at some point, we have a desired outcome (cost function/reward), C
+- if we've trained such a multi-layered predictive model in latent space, we're going to ask this high level actor (Actor 2) to give us high level actions, a2 -> we can then roll out the world model with it until we reach C(s2) -> we can use an optimization teqnique (like back propogation) in order refine the high level actions, a2, as best we can
+- the rewards on the lower level, C(s) are how well we match the targets that are given by the higher level
+- we can use our lower level pre
+
 ## Architecture Overview (pseudocode)
 
 ## Critical Analysis
