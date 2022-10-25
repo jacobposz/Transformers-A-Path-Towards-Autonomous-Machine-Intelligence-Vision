@@ -101,7 +101,14 @@ under uncertainty
 
 *** so, how do we design the loss to prevent collapse? -> there are two approaches: constrastive methods and regularized methods
 
+### Constrative Methods Versus Regularized Methods
+![image](https://user-images.githubusercontent.com/89123268/197679370-f6278ad9-4a4b-421a-87e9-3151550593c0.png)
 
+#### Contrastive Methods
+
+
+
+#### Regularized Methods
 
 
 ## Question 1
