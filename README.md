@@ -124,9 +124,11 @@ What is the difference between the JEPA Achitecture and the Generative latent-va
 **hint:**
 
 JEPA Architecture:
+
 ![9](https://user-images.githubusercontent.com/89123268/197687084-91018354-2f6d-4b3e-8177-a39db32ec7a3.png)
 
 Generative latent-variable Architecture model:
+
 ![image](https://user-images.githubusercontent.com/89123268/197687145-a846a455-2009-4aa7-9495-9ead766c18d3.png)
 
 
