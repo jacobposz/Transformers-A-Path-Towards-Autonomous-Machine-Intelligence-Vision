@@ -174,7 +174,9 @@ He also states that in addition, you could also attach some kind of prediction h
 ### Conclusion
 When answering the question of "Could this Architecture be the Basis of a Model of Animal Intelligence," LeCun states, "The presence of a cost module that drives the behavior of the agent by searching for optimal actions suggests that autonomous intelligent agents of the type proposed here will inevitably possess the equivalent of emotions. In an analogous way to animal and humans, machine emotions will be the product of an intrinsic cost, or the anticipation of outcomes from a trainable critic."
 
-Moreover, 
+Moreover, when asnwering the question of "Could this be a path towards machine common sense," LeCun states, "I speculate that common sense may emerge from learning world models that capture the self-consistency and mutual dependencies of observations in the world, allowing an agent to fill in missing information and detect violations of its world model."
+
+
 
 ## Question 1
 What is the difference between the JEPA Achitecture and the Generative latent-variable Architecture model?
