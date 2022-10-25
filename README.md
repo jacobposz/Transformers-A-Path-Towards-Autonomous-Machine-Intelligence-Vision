@@ -7,6 +7,9 @@ In this paper, Yann LeCun proposes how he thinks we should reach machine intelli
 
 LeCun's proposal is centered around JEPA. As stated by LeCun, "JEPA models learn high-level representations that capture the dependencies between two data points, such as two segments of video that follow each other. JEPA replaces contrastive learning with “regularized” techniques that can extract high-level latent features from the input and discard irrelevant information."
 
+### Problem
+The main issue that LeCun states in this paper is that "ML models severely lack the ability to adapt to a new situation they haven’t seen before." For example, he discusses how an adolescent can learn to drive a car in hours while ML models require a very large iteration of training so they know how to respond in the rarest of situations.
+
 ### Main contributions
 As stated in the paper, the main contributions of this paper include:
 1) An overall cognitive architecture in which all modules are differntiable and many of them are trainable
