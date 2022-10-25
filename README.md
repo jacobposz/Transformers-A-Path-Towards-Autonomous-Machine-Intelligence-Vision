@@ -27,6 +27,7 @@ under uncertainty
 
 ### World Module
 #### Mode-1 perception-action episode
+![image](https://user-images.githubusercontent.com/89123268/197663582-2a003ca0-d0b4-4c2b-b8d3-8e83c6f2fa29.png)
 
 
 
