@@ -19,8 +19,11 @@ under uncertainty
 ### Entire proposed architecture
 ![image](https://user-images.githubusercontent.com/89123268/197662144-059230a4-1e00-4099-baca-19c705bcd818.png)
 
-
-
+- The world module is the center piece of the model that predicts the state of the world forward in time
+- The actor module is going to interact with the world model and is what will ultimately be what does the action; the actor can also act inside of the world module in essentially a simulated reality to plan forward (what would happen if I were to do something?) or it could interact with the world model to find the best action
+- the short-term memory is going to be used to train the world model and the  the "critic" (things that happen in the world that will be stored in the short-term memory)
+- perception module takes whatever the world gives it and makes it available as a representation or as a perception; this is essentially the entry point to the systems that we have now. This is the closest module we have to something that's actually working which is our current deep learning systems; they're very good at perception.
+- the configurator is the "master module" that configures all the other modules depending on what situation they're in
 
 ## Question 1
 
