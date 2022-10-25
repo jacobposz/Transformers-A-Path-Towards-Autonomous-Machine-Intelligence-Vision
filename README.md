@@ -49,6 +49,18 @@ under uncertainty
 *** this is essentially the module thinking about the future and figuring out through forward looking, what it need to do/change to improve the outcome
 *** you can include the costs, C, which you can have after every step... thes don't have to be optimization; they can also be search, evolutionary search, tree search, etc. -> essentially, anything that actually tries to improve the action sequence at inference time
 
+#### Training a reactive module from the result of Mode-2 reasoning
+![image](https://user-images.githubusercontent.com/89123268/197669875-7bcd3678-2f48-439f-b735-27e56dca2df8.png)
+
+- actions, a, are the ones we have come up with through this optimization process
+- you can ask the actor, A, (or take the output from the initial actor) and then try to make these things as close as possible
+- everything's differentiable, so you can train the actor to essentially match the better actions because if you have a good world model, you can improve the low level actor, A, and at some point, the initial action sequence that it proposes will already be close to optimal
+
+
+
+
+
+
 
 ## Question 1
 
