@@ -212,6 +212,11 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Architecture Overview (pseudocode)
 
+As stated in the paper, LeCun states, "This document is not a technical nor scholarly paper in the traditional sense, but a position paper expressing my vision for a path towards intelligent machines that learn more like animals and humans, that can reason and plan, and whose behavior is driven by intrinsic objectives, rather than by hard-wired programs, external supervision, or external rewards. Many ideas described in this paper (almost all of them) have been formulated by many authors in various contexts in various form. The present piece does not claim priority for any of them but presents a proposal for how to assemble them into a consistent whole. In particular, the piece pinpoints the challenges ahead. It also lists a number of avenues that are likely or unlikely to succeed."
+
+Therefore, since this paper is not technical, there is no code involved. Therefore, I have no pseudocode to show. However, at the end of the paper, LeCun provides **A list of contrastive methods and loss functions to train energy-based models** which I will provide below:
+![image](https://user-images.githubusercontent.com/89123268/197897445-a7319eff-d5c0-4dd7-acff-04be3d749005.png)
+
 ## Critical Analysis
 
 - not super sophisticated
