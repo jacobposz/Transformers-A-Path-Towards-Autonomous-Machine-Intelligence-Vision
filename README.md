@@ -165,7 +165,7 @@ He also states that in addition, you could also attach some kind of prediction h
 ## Question 1
 What is the difference between the JEPA Achitecture and the Generative latent-variable Architecture model?
 
-**hint:**
+**Hint:**
 
 **JEPA Architecture:**
 
@@ -178,7 +178,17 @@ What is the difference between the JEPA Achitecture and the Generative latent-va
 
 ## Question 2
 
-What are the similarities of ____ and Hierarchical JEPA for Mode-2 hierarchical planning?
+Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies Mode-2 perception-action. What are the similarities? What are the differences?
+
+**Hint:**
+
+**Mode-2 perception-action**
+
+
+
+**Hierarchical JEPA for Mode-2 hierarchical planning**
+
+
 
 ## Architecture Overview (pseudocode)
 
@@ -187,5 +197,7 @@ What are the similarities of ____ and Hierarchical JEPA for Mode-2 hierarchical 
 ## Resource LInks
 
 ## Video
+
+## Answers to Questions
 
 ## References
