@@ -35,8 +35,12 @@ under uncertainty
 - the other path leads to the cost module which tells us the cost of something (this can be good or bad, intrinsic motivation or external reward, etc.) -> we can compute it, however, in this basic loop, the actor has been trained already to just act on a perception 
 - at inference time, the actor doesn't need to look at the cost anymore in order to act
 
+#### Mode-2 perception-action episode
+![image](https://user-images.githubusercontent.com/89123268/197664794-04755acb-a672-4d89-a40d-c140d5303072.png)
 
-
+- again, we have an input (x) and put it through the encoder (Enc(x)) -> however, now, we are going to roll out the world module across different time steps
+- the actor (a[0]) is going to take the state it recieves from  the encoder and propse an action (this is the same actor as before) -> we can then use this and put it back into the world module along with the latent prediction
+- the predictor (Pred(s,a)) takes whatever comes out of the encoder; in other words, it takes a latent state of the world and it predicts the next latent state of the world (hence, this is why LeCun calls this "non-generative")
 
 
 
