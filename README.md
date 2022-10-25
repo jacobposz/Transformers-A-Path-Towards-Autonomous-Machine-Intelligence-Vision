@@ -13,6 +13,14 @@ As stated in the paper, the main contributions of this paper include:
 3) a non cntrastive self-supervised learning paradigm that produces represenations that are simultaneously informative and predictable
 4) A way to use H-JEPA as the basis of predictive world models for hierarchical planning
 under uncertainty
+ 
+***H denotes hierarchical arrangement of the jepa architecture
+
+### Entire proposed architecture
+![image](https://user-images.githubusercontent.com/89123268/197662144-059230a4-1e00-4099-baca-19c705bcd818.png)
+
+
+
 
 ## Question 1
 
