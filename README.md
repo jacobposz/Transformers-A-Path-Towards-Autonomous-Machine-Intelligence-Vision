@@ -29,6 +29,11 @@ under uncertainty
 #### Mode-1 perception-action episode
 ![image](https://user-images.githubusercontent.com/89123268/197663582-2a003ca0-d0b4-4c2b-b8d3-8e83c6f2fa29.png)
 
+- Mode 1 is reactive; you simply go from perception of the world to action without much thought
+- we start with the world and get an observation (x) then put this through the encoder (Enc(x)) (which is the perception module) which will give us a latent representation
+- different paths emerge, although only one is important: the path that goes to the actor (A(s)) -> the actor then sends back an action to the world
+- the other path leads to the cost module which tells us the cost of something (this can be good or bad, intrinsic motivation or external reward, etc.) -> we can compute it, however, in this basic loop, the actor has been trained already to just act on a perception 
+- at inference time, the actor doesn't need to look at the cost anymore in order to act
 
 
 
