@@ -262,7 +262,7 @@ Other than that, I thought the paper was well written and did truely enjoy learn
 
 - Detailed Explanation:
 
-- Code Demonstration:
+- Code Demonstration: **LeCun provides no code in this paper**
 
 ## Answers to Questions
 
