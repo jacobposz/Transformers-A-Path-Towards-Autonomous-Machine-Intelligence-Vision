@@ -200,8 +200,6 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Answers to Questions
 
-Question 1 Answer: D represents the energy/compatibility function
-
-We have an encoder for x -> this gives us a latent representation, sx
+y is put into an encoder to give us a latent representation, sy before being put into the energy/compatibility function
 
 ## References
