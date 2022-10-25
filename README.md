@@ -178,17 +178,17 @@ What is the difference between the JEPA Achitecture and the Generative latent-va
 
 ## Question 2
 
-Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies Mode-2 perception-action. What are the similarities? What are the differences?
+Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes Mode-2 perception-action. What are the similarities? What are the differences?
 
 **Hint:**
 
 **Mode-2 perception-action**
 
-
+![3](https://user-images.githubusercontent.com/89123268/197706048-5246a61e-cdd3-4bfc-b988-b5a0765b35e0.png)
 
 **Hierarchical JEPA for Mode-2 hierarchical planning**
 
-
+![13](https://user-images.githubusercontent.com/89123268/197706167-484eec21-0620-4137-93e0-ebd5c4a336e6.png)
 
 ## Architecture Overview (pseudocode)
 
