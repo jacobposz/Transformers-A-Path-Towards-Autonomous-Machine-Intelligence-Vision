@@ -46,7 +46,8 @@ under uncertainty
 - let's assume that episodes are always the same length (C(s[T])) and you won't get any reward until the very end -> we can compute the reward which is fine (we could already do this before), however, once the entire loop is finished, if all of these things are differentiable, we can say that the action sequence will give us a reward -> can we make this reward bigger? -> since evrything's differentiable, we can certainly use back propogation and gradient descent to ask how the action needs to change in order to make C(s[T]) increase
 - we can modify/optimize all of these actions at inference time using gradient descent -> gradient descent is used here to improve the initial action sequence to a more optimal set of actions -> we can improve the actions, a, using gradient descent, through all of the modules until we have completely optimized the action sequence -> which means, the very first action, a[0], is hopefully a much better action than the action first proposed by the naive actor -> we can then take this action and feed it back to the world as an action
 
-
+*** this is essentially the module thinking about the future and figuring out through forward looking, what it need to do/change to improve the outcome
+*** you can include the costs, C, which you can have after every step... thes don't have to be optimization; they can also be search, evolutionary search, tree search, etc. -> essentially, anything that actually tries to improve the action sequence at inference time
 
 
 ## Question 1
