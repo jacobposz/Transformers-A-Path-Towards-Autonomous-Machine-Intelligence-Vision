@@ -178,7 +178,7 @@ What is the difference between the JEPA Achitecture and the Generative latent-va
 
 ## Question 2
 
-How does the Hierarchical JEPA for Mode-2 hierarchical planning relate to _______?
+What are the similarities of ____ and Hierarchical JEPA for Mode-2 hierarchical planning?
 
 ## Architecture Overview (pseudocode)
 
