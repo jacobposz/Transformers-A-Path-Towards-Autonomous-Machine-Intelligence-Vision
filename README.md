@@ -220,9 +220,22 @@ Therefore, since this paper is not technical, there is no code involved. So, I h
 
 ## Critical Analysis
 
-- not super sophisticated
-- he has fewer components and they're not very organized
-- multiple versions
+First of all, I want to make it clear that I did enjoy this paper and like LeCun's proposal. However, there were a few things that I noticed throughout the paper that could be improved. I will discuss them below:
+
+### Unorganized
+
+First and foremost, throughout the paper, I noticed numerous spelling errors and gramatical mistakes. For example, on page 62, LeCun states, "A **of** list **of** contrastive methods." In case you don't see it immediately, he uses the word "of" twice; one of which is out of place.
+
+Moreover, the paper isn't very long (which doesn't mean that it is poorly written); However, it isn't very sophisticated either (ex: there is no code and no math involved). Knowing that LeCun is the Chief AI specialist at Meta, this really suprised me. To give him credit though, he states at the beginning of the paper that, "The text is written with as little jargon as possible, and using as little mathematical prior knowledge as possible, so as to appeal to readers with a wide variety of backgrounds including neuroscience, cognitive science, and philosophy, in addition to machine learning, robotics, and other fields of engineering"
+
+Furthermore, compared to "The Soar Cognitive Architecture" by John E. Laird (a book about developing the fixed computational building blocks necessary for general intelligent agents), this book has much fewer components and is not very organized. I want to note that I did not read "The Soar Cognitive Architecture," but I did briefly skim it, and even from that, I could still see a huge difference in organization and complexity. 
+
+Lastly, there are multiple versions of the book as well which makes it confusing. for example, the version that I read was "Version 0.9.2, 2022-06-27," although when researching, I found multiple other versions that were completely different.
+
+### Missing Key Points
+
+### No code or Real World Examples
+
 - figure 2 is missing the agent model and cognitive control -> he doesn't have long-term memory (soar cognitive architecture does which is a much older model)
 - not enough was said about intrinsic motivation
 - only mentions minimizing risk one time in the entire paper 
