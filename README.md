@@ -200,6 +200,10 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Answers to Questions
 
+### Answer to Question 1
 y is put into an encoder to give us a latent representation, sy, which is then put into the energy/compatibility function for the JEPA Achitecture
+
+### Answer to Question 2
+
 
 ## References
