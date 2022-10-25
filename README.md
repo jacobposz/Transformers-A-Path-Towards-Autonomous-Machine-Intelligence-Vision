@@ -176,6 +176,8 @@ When answering the question of "Could this Architecture be the Basis of a Model 
 
 Moreover, when asnwering the question of "Could this be a path towards machine common sense," LeCun states, "I speculate that common sense may emerge from learning world models that capture the self-consistency and mutual dependencies of observations in the world, allowing an agent to fill in missing information and detect violations of its world model."
 
+Furthermore, LeCun ends the paper by stating, "A remain question is whether the type of reasoning proposed here can encompass all forms of reasoning that humans and animals are capable of."
+
 
 
 ## Question 1
