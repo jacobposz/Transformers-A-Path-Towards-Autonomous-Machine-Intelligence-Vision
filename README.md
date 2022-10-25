@@ -62,34 +62,33 @@ under uncertainty
 ### Latent-Variable Energy-Based Model (LVEBM)
 ![image](https://user-images.githubusercontent.com/89123268/197673225-3f3edf6a-bf39-4d55-8fe4-05902a096a0d.png)
 
-- same formula as before; we have an x and a y and an energy function, Ew that tells us how well those two are compatible with each other which is Fw
-- however, as we've seen, there could be many y that are possible for a given x
-- just by looking at x, we can't tell whcih of the y's is compatible -> thats why we introduce a latent variable, z -> z captures all of the information about y that isnt directly in x... for example, if a car has the option of turning left or rightm this would be represented by z
-- if we have an x and a y, in order to compute that energy that tells us how well the two are compatible, we need to minimize over z
-- there is always a hidden variable in energy-based models -> the hidden variable captures everything that isnt captured in x about y -> we minimize over that latent variable to get the actual energy which means, we're looking for the value of the latent variable that makes x and y most compatible
-- if we already know that x and y are compatible with one another, then minimizing over z (if we have a good energy function) could actually tell us something about the latent structure of the world -> so, we could infer z or if we have this model trained then if we have an x, we could actually sample some z values in order to produce different possibilities of y -> this gives us a lot of freedom to handle uncertainty in the world or unobserved structure in the world
+- Same formula as before; we have an x and a y and an energy function -> Ew that tells us how well x and y are compatible with each other (which is also Fw)
+- However, there could be many y's that are possible for a given x
+- Just by looking at x, we can't tell whcih of the y's is compatible -> thats why we introduce a latent variable, z -> z captures all of the information about y that isnt directly in x... for example, if we have a car that has the option of turning left or right, this decision would be represented by z
+- if we have an x and a y, in order to compute that energy that tells us how well the two are compatible, we need to minimize over (capital) Z
+- So, we could infer z or if we have this model trained then if we have an x, we could actually sample some z values in order to produce different possibilities of y -> this gives us a lot of freedom to handle uncertainty in the world or unobserved structure in the world
 
 ### Architectures and their capacity for collapse
 ![image](https://user-images.githubusercontent.com/89123268/197675195-c54360d8-3b9f-415c-b303-d92e374308e5.png)
 
 #### a) Prediction / regression - No Collapse
-- D represents the energy/compatibility function
-- what if we have a deterministic encoder that gives us the latent representation of x
-- then, we use a predictor module in order to predict y
-- we'll predict y directly then compare it with the true y -> we have a loss in between them
-- this cannot collapse becasue we need to predict the actual y
+**D represents the energy/compatibility function**
+- We have an encoder for x -> this gives us a latent representation, sx
+- Then, we use a predictor module in order to predict y
+- We'll predict y~ directly then compare it with the true y -> there'll be a difference between them
+- This cannot collapse becasue we need to predict the actual y
 
 #### b) Generative latent-variable Architecture - Can Collapse
-- again, we compute the representation for x, but now we introduce z that can vary over a certain domain, which gives us a domain that we can control for the output of the predictor Pred
-- if we now try to predict y from z and x, we can set z equal to y and we'd be good -> so, this can collapse
+- We have an encoder for x -> this gives us a latent representation, sx -> but now we introduce z which can vary over a certain domain -> this gives us a domain that we can control for the output of the predictor
+- If we now try to predict y from z and x, we can set z equal to y and we'd be good -> otherwise, this can collapse
 
 #### c) Auto-Encoder - Can Collapse
-- this is the same as the first architecture, except only y go into the encoder, instead of both x and y
-- after going through the encoder, y gets a latent representation, goes through a decoder that gives you back an estimation of oneself -> so, this can collapse
+- This is the same as the first architecture, except only y goes into the encoder, instead of both x and y
+- After going through the encoder, y gets a latent representation, sy, then goes through a decoder that gives back an estimation of oneself -> so, this can collapse easily
 
 #### d) Joint Embedding Architecture - Can Collapse
-- we have an encoder for x and an encoder for y (these could be the same but don't have to be) -> this will give us 2 latent representations -> then, we use an energy function to compute how well these 2 latent representations fit together, possibly with the help of a latent variable
-- if the encoders always output constant vectors and the constant vectors are the same for both x and y, we'll always be good -> however, this can collapse if they are different
+- We have an encoder for x and an encoder for y (these could be the same but don't have to be) -> this will give us 2 latent representations, sx and sy -> then, we use an energy function to compute how well these 2 latent representations fit together, possibly with the help of a latent variable
+- If the encoders always output constant vectors for both x and y, we'll always be good -> however, this can collapse if they are different
 
 **so, how do we design the loss to prevent collapse? -> there are two approaches: constrastive methods and regularized methods**
 
@@ -97,11 +96,10 @@ under uncertainty
 ![image](https://user-images.githubusercontent.com/89123268/197679370-f6278ad9-4a4b-421a-87e9-3151550593c0.png)
 
 #### Contrastive Methods
-- many self supervised image training procedures are contrastive -> they'll have an image -> they are going to make 2 variations of that image ->  then, they'll take a third image from the database and will make a variation of that -> then, they use embedding models to embed all of the variations -> this will give a data point somewhere in high dimensional space
-- you then try to pull the 2 variations from the same image together and push the variations from different images apart
-- contrastive training relies on you coming up with these negative samples
-- this quickly runs into problems (curse of dimensionality) so this whole approach of finding training examples/negative examples around a training example to do the contrastive training gets less and less tenable the higher the dimensions
-- therefore LeCun advertises for something different: regularized methods
+- Many self supervised image training procedures are contrastive -> they'll have an image -> then they'll make 2 variations of that image ->  then, they'll take a third image from the database and will make a variation of that -> then, they use embedding models to embed all the variations -> this will give a data point somewhere in high dimensional space
+- You then try to pull the 2 variations from the same image together and push the variations from different images apart
+- Contrastive training relies on you coming up with these training/negative samples
+- this quickly runs into problems (curse of dimensionality),therefore LeCun advertises for something different: regularized methods
 
 
 #### Regularized Methods
