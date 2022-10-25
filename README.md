@@ -25,6 +25,17 @@ under uncertainty
 - perception module takes whatever the world gives it and makes it available as a representation or as a perception; this is essentially the entry point to the systems that we have now. This is the closest module we have to something that's actually working which is our current deep learning systems; they're very good at perception.
 - the configurator is the "master module" that configures all the other modules depending on what situation they're in
 
+### World Module
+#### Mode-1 perception-action episode
+
+
+
+
+
+
+
+
+
 ## Question 1
 
 ## Question 2
