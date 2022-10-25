@@ -215,7 +215,12 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Resource Links
 
-Yann LeCun "A Path Towards Autonomous AI" presentation at NYU [https://www.youtube.com/watch?v=DokLw1tILlw]
+- Yann LeCun discussing "A Path Towards Autonomous AI" at NYU [https://www.youtube.com/watch?v=DokLw1tILlw]
+- The link to ____ github:
+- the link to ____ blog:
+- an article from ___ about _____:
+- a YouTube video by _____ discussing the paper:
+- _____ huggingface page:
 
 
 ## Video Recording
