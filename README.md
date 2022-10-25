@@ -1,2 +1,2 @@
-# Transformers-A-Path-Towards-Autonomous-Machine-Intelligence-Vision
+# A Path Towards Autonomous Machine Intelligence
 Jacob Posz Transformers Paper Presentation
