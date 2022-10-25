@@ -213,7 +213,7 @@ Explain how Hierarchical JEPA for Mode-2 hierarchical planning modifies/changes 
 
 ## Resource Links
 
-## Video
+## Video Recording
 
 ## Answers to Questions
 
