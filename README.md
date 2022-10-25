@@ -2,7 +2,7 @@
 
 ## Overview
 ### JEPA
-In this paper, LeCun proposes how he thinks we should reach machine intelligence.
+In this paper, Yann LeCun proposes how he thinks we should reach machine intelligence.
 
 LeCun's proposal is centered around JEPA. As stated by LeCun, "JEPA models learn high-level representations that capture the dependencies between two data points, such as two segments of video that follow each other. JEPA replaces contrastive learning with “regularized” techniques that can extract high-level latent features from the input and discard irrelevant information."
 
