@@ -43,7 +43,7 @@ under uncertainty
 - the predictor (Pred(s,a)) takes whatever comes out of the encoder; in other words, it takes a latent state of the world and it predicts the next latent state of the world (hence, this is why LeCun calls this "non-generative")...it doesn't predict the world, but instead predicts the latent state of the world which enables it to focus on whats truely important for the task
 - we can now give the actor the representation; if it proposes an action, we can use the world module to predict the next state 
 - from the next state, we can ask the actor for an action -> the actor gives us an action and we can predict the next state
-- let's assume that episodes are always the same length (C(s[T])) and you won't get any reward until the very end
+- let's assume that episodes are always the same length (C(s[T])) and you won't get any reward until the very end -> we can compute the reward which is fine (we could already do this before), however, once the entire loop is finished, if all of these things are differentiable, 
 
 
 
