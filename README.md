@@ -150,7 +150,13 @@ He also states that in addition, you could also attach some kind of prediction h
 ### Hierarchical JEPA (H-JEPA)
 ![image](https://user-images.githubusercontent.com/89123268/197694209-a904acc0-018b-403d-82df-b4e5f3fa3856.png)
 
+- The lower level predicts over short time frames while the higher level predicts over longer time frames
+- the latent representation, s2 is obtained from the latent representation, s1, by a second encoder -> it then makes predictions over a longer period of time
 
+**We can use the H-JEPA model to perform hierarchical planning:**
+
+### Hierarchical JEPA for Mode-2 hierarchical planning
+![image](https://user-images.githubusercontent.com/89123268/197704025-3214afa7-ead7-48b0-8ad2-057962fd0a69.png)
 
 
 
