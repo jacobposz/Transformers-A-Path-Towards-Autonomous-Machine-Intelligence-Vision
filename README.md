@@ -59,7 +59,13 @@ under uncertainty
 ### Self-Supervised Learning (SSL)
 ![image](https://user-images.githubusercontent.com/89123268/197671011-21bc1626-a787-4680-9c28-6e841951909c.png)
 
-
+- you have a piece of data (entire block) and you mask out the right hand side (y) and then you use what you do know (x) and you try to predict the thing you don't know
+- you don't want to predict the thing you don't know but instead, create an energy function -> an energy function tells you how well x and y fit together
+- you want to train a system that sees the data space in this format, which is going to be an energy landscape
+- imagine the block as a video sequence with a bunch of frames -> if you have an energy landscape, you're trying to relate the start of a video sequence to the end of a video sequence
+- the system that you train should assign a very low energy to all of the video sequences that are realistic
+- we don't need to predict y from x directly because there could be multiple video sequences following the same beginning -> if we were to just predict y, we would probably train the system to identify only one correct continuation -> however, if we train the energy function, the energy function could assign a low value to any possible continuation as long as it assigns a high value everywhere else
+- LeCun stresses that an energy function is something you minimize at inference time while the training loss is something that you minimize at training time
 
 
 
