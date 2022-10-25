@@ -1,6 +1,7 @@
 # A Path Towards Autonomous Machine Intelligence
 
 ## Overview
+### JEPA
 
 
 
