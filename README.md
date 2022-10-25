@@ -49,19 +49,15 @@ under uncertainty
 ![image](https://user-images.githubusercontent.com/89123268/197669875-7bcd3678-2f48-439f-b735-27e56dca2df8.png)
 
 - Actions, a, are what we have come up with through this optimization process
-- You can ask the actor, A, (or take the output from the initial actor) and then try to make these things as close as possible
-- everything's differentiable, so you can train the actor to essentially match the better actions because if you have a good world model, you can improve the low level actor, A, and at some point, the initial action sequence that it proposes will already be close to optimal
+- Everything's differentiable, so you can train the actor to essentially match the best actions because if you have a good world model, you can improve the low level actor, A(s[0]), and at some point, the initial action sequence will already be close to optimal
 
 ### Self-Supervised Learning (SSL)
 ![image](https://user-images.githubusercontent.com/89123268/197671011-21bc1626-a787-4680-9c28-6e841951909c.png)
 
-- you have a piece of data (entire block) and you mask out the right hand side (y) and then you use what you do know (x) and you try to predict the thing you don't know
-- you don't want to predict the thing you don't know but instead, create an energy function -> an energy function tells you how well x and y fit together
-- you want to train a system that sees the data space in this format, which is going to be an energy landscape
-- imagine the block as a video sequence with a bunch of frames -> if you have an energy landscape, you're trying to relate the start of a video sequence to the end of a video sequence
-- the system that you train should assign a very low energy to all of the video sequences that are realistic
-- we don't need to predict y from x directly because there could be multiple video sequences following the same beginning -> if we were to just predict y, we would probably train the system to identify only one correct continuation -> however, if we train the energy function, the energy function could assign a low value to any possible continuation as long as it assigns a high value everywhere else
-- LeCun stresses that an energy function is something you minimize at inference time while the training loss is something that you minimize at training time
+- You have a piece of data (which is x + y) and you mask out the right hand side (y) and then you use what you do know (x) and you try to predict the thing you don't know
+- You don't want to predict the thing you don't know but instead, create an energy function -> an energy function tells you how well x and y fit together
+- You want to train a system that sees the data space in this format, which is going to be an energy landscape
+- we don't need to predict y from x directly but instead train the energy function -> the energy function could assign a low value to any possible continuation as long as it assigns a high value everywhere else
 
 ### Latent-Variable Energy-Based Model (LVEBM)
 ![image](https://user-images.githubusercontent.com/89123268/197673225-3f3edf6a-bf39-4d55-8fe4-05902a096a0d.png)
