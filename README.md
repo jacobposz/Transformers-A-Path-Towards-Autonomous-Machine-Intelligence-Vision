@@ -116,7 +116,9 @@ under uncertainty
 - we then use the predictor to predict the latent representation of y, s~y from the representation of x
 - z in this case controls which latent representation we're getting -> so, z can vary over the domain (captal) Z which then leads the s~y to vary over the domain, (capital) S which then goes into the energy function, D regardless of whether the representation of sy is compatible with the predicted representation of y, s~y
 - As stated by LeCun, "The main advantage of JEPA is that it performs predictions in representation space, eschewing the need to predict every detail of y, and enabling the elimination of irrelevant details by the encoders" -> obviously, this means this will be subject to collapse
+- these encoders could just throw away everything that's not relevant about x and y because we never need to predict y directly
 
+![image](https://user-images.githubusercontent.com/89123268/197689578-a1f8c2f9-cfe7-4c5d-a83f-cb67fd9c2441.png)
 
 
 
