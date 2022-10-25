@@ -1,19 +1,19 @@
 # A Path Towards Autonomous Machine Intelligence
 
-# Overview
+## Overview
 
-asdfadfa
 
-# Question 1
 
-# Question 2
+## Question 1
 
-# Architecture Overview (pseudocode)
+## Question 2
 
-# Critical Analysis
+## Architecture Overview (pseudocode)
 
-# Resource LInks
+## Critical Analysis
 
-# Video
+## Resource LInks
 
-# References
+## Video
+
+## References
