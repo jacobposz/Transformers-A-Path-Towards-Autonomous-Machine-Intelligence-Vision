@@ -159,13 +159,16 @@ He also states that in addition, you could also attach some kind of prediction h
 ![image](https://user-images.githubusercontent.com/89123268/197704025-3214afa7-ead7-48b0-8ad2-057962fd0a69.png)
 
 - x is the state of the world and we know that at some point, we have a desired outcome (cost function/reward), C
-- if we've trained such a multi-layered predictive model in latent space, we're going to ask this high level actor (Actor 2) to give us high level actions, a2 -> we can then roll out the world model with it until we reach C(s2) -> we can use an optimization teqnique (like back propogation) in order refine the high level actions, a2, as best we can
+- if we've trained such a multi-layered predictive model in latent space, we're going to ask this high level actor (Actor 2) to give us high level actions, a2 -> we can then roll out the world model with it until we reach C(s2) -> we can use an optimization teqnique (like back propogation) in order refine the high level actions, a2, as best we can -> now, we have targets, a2, for these low levels actions, a1
 - the rewards on the lower level, C(s) are how well we match the targets that are given by the higher level
-- we can use our lower level pre
+- we can use our lower level predictors to determine the best actions, a1, using proposals, back propogation, etc. to match our higher level actions, a2, that gives us an entire action sequence that would optimally fulfill the plan to match these higher level actions
+- we could also optimize all of the different levels together until we have the optimal sequence of lower level and higher level actions in order to reach our goal, C(s2) -> at this point, we can be very confident than our first action, a[0], will serve us well -> we can send this to the world
+- we then get the next state and repeat the same process
 
+### Hierarchical JEPA for Mode-2 hierarchical planning in an uncertain environment
+![image](https://user-images.githubusercontent.com/89123268/197711629-b3bbeee4-baa4-4361-9929-5fc17ce98c07.png)
 
-
-
+- if you are in an uncertain environment, you could introduce latent variables, z2 & R2, which you can infer so if you want to reach a certain goal, C9s2), you can infer the latent variables through an optimization procedure or you can sample the latent variables in order to give you different continuations of your world model
 
 
 
