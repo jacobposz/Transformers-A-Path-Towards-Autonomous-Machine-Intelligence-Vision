@@ -145,6 +145,8 @@ He also states that in addition, you could also attach some kind of prediction h
 
 **So, what can we do with this? -> we can arrange it in a hierarchical fashion**
 
+### Hierarchical JEPA (H-JEPA)
+![image](https://user-images.githubusercontent.com/89123268/197694209-a904acc0-018b-403d-82df-b4e5f3fa3856.png)
 
 
 
