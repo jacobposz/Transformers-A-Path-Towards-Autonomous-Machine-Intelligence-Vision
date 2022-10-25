@@ -98,7 +98,8 @@ under uncertainty
 #### d) Joint Embedding Architecture - Can Collapse
 - we have an encoder for x and an encoder for y (these could be the same but don't have to be) -> this will give us 2 latent representations -> then, we use an energy function to compute how well these 2 latent representations fit together, possibly with the help of a latent variable
 - if the encoders always output constant vectors and the constant vectors are the same for both x and y, we'll always be good -> however, this can collapse if they are different
-- 
+
+*** so, how do we design the loss to prevent collapse? -> there are two approaches: constrastive methods and regularized methods
 
 
 
