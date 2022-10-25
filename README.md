@@ -107,6 +107,14 @@ under uncertainty
 - you enforce/encourage the system to keep the region where the energy is low very small -> this is done through regularization
 
 ### The JEPA Architecture
+![image](https://user-images.githubusercontent.com/89123268/197686653-b59ba109-b3d0-4a27-830f-7e75bf071e7a.png)
+
+- This is the basic module
+- it looks similar to 
+
+
+
+
 
 
 ## Question 1
