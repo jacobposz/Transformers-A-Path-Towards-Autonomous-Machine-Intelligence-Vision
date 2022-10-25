@@ -123,6 +123,8 @@ under uncertainty
 
 **Here is where regularization comes in**
 
+### Non-contrastive training of JEPA
+
 ![image](https://user-images.githubusercontent.com/89123268/197689578-a1f8c2f9-cfe7-4c5d-a83f-cb67fd9c2441.png)
 
 - We obviously train it by minimizing the predictive error, D
