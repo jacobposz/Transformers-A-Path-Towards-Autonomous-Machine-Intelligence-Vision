@@ -260,7 +260,7 @@ Other than that, I thought the paper was well written and did truely enjoy learn
 
 - Overview: https://www.youtube.com/watch?v=Se8IjGBodBU
 
-- Detailed Explanation:
+- Detailed Explanation: https://www.youtube.com/watch?v=AC87In3cnjM&t=13s
 
 - Code Demonstration: **LeCun provides no code in this paper**
 
