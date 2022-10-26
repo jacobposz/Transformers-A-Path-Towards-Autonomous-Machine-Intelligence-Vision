@@ -258,7 +258,7 @@ Other than that, I thought the paper was well written and did truely enjoy learn
 
 ## Video Recordings
 
-- Overview: https://www.youtube.com/watch?v=pvvhlpD6Hko
+- Overview: https://www.youtube.com/watch?v=Se8IjGBodBU
 
 - Detailed Explanation:
 
